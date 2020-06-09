@@ -1,5 +1,7 @@
 <?php
-$connect=new PDO("mysql:host=localhost;dbname=vue-php","root","");
+//$connect=new PDO("mysql:host=localhost;dbname=vue-php","root",""); #development
+$connect=new PDO("mysql:host=remotemysql.com;dbname=wb7JdbWLVp","wb7JdbWLVp","Joh2OV3HIn"); #remote
+
 #รับค่าที่ส่งมา
 $request_data=json_decode(file_get_contents("php://input"));
 $data=array();

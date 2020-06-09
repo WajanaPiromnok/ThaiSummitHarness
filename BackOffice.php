@@ -1,5 +1,6 @@
 <?php
-$con=mysqli_connect("localhost","root","","vue-php");
+//$con=mysqli_connect("localhost","root","","vue-php"); #development
+$con=mysqli_connect("remotemysql.com","wb7JdbWLVp","Joh2OV3HIn","wb7JdbWLVp"); #remote
 $query="SELECT * FROM employee";
 $result=mysqli_query($con,$query);
 
